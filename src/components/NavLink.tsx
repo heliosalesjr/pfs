@@ -8,7 +8,9 @@ interface Props {
 
 const NavLink = ( {planetName, planetId}: Props ) => {
   return (
-    <Link href={planetId}>{planetName}</Link>
+    <Link href={planetId} style={{marginRight: "1rem"}}>
+        {planetName.toUpperCase()}
+    </Link>
   )
 }
 
