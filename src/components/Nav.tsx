@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Link, Typography } from '@mui/material'
 import React from 'react'
 import data from '@/data/data.json'
 import NavLink from './NavLink'
@@ -15,9 +15,12 @@ const Nav = () => {
             borderBottom: "1px solid rgba(255, 255, 255, 0.75)" 
         }}
     >
-        <Typography variant="h1" sx={{ fontSize: 24, fontWeight: 'bold' }}>
-        Hello Planets!
-        </Typography>
+        <Link href="/">
+            <Typography variant="h1" sx={{ fontSize: 24, fontWeight: 'bold' }}>
+            Hello Planets!
+            </Typography>
+        </Link>
+        
 
         <Box>
             {data.map((planet) => (
